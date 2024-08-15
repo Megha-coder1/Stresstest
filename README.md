@@ -1,6 +1,6 @@
-# PhoneStress v3.1
+# Stresstest v3.1
 
-**PhoneStress** is a tool designed for stress testing CPUs and memory of a phone or computer. It provides a graphical interface to configure and start stress tests. This tool is meant for research and educational purposes only.
+**Stresstest** is a tool designed for stress testing CPUs and memory of a phone or computer. It provides a graphical interface to configure and start stress tests. This tool is meant for research and educational purposes only.
 
 ## Features
 
