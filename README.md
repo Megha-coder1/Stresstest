@@ -13,11 +13,11 @@
 
 1. Clone the repository:
    \`\`\`bash
-   git clone https://github.com/Megha-coder1/PhoneStress.git
+   git clone https://github.com/Megha-coder1/Stresstest.git
    \`\`\`
 2. Navigate to the project directory:
    \`\`\`bash
-   cd PhoneStress
+   cd Stresstest
    \`\`\`
 3. Install the required dependencies:
    \`\`\`bash
@@ -28,7 +28,7 @@
 
 1. Run the application:
    \`\`\`bash
-   python phonestress.py
+   python Stresstest.py
    \`\`\`
 2. **Welcome Window**: A welcome window will appear with the following options:
    - **Next**: Enter the number of workers and choose the stress method. The stress test will commence in 10 seconds.
@@ -43,7 +43,7 @@
 
 ## Code Overview
 
-- **PhoneStress Class**: Manages the stress test, including starting and monitoring workers.
+- **Stresstest Class**: Manages the stress test, including starting and monitoring workers.
 - **StressWorker Class**: Executes the stress tasks based on the selected method.
 - **GUI**: Uses \`tkinter\` to provide a user-friendly interface for configuration and execution.
 
