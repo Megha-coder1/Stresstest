@@ -1,3 +1,27 @@
+# Copyright (C) 2024 K. MEGHADITYA
+# 
+# PhoneStress is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# PhoneStress is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with PhoneStress. If not, see <https://www.gnu.org/licenses/>.
+
+pip install tkinter
+pip install multiprocessing
+pip install random
+pip install numpy
+pip install logging
+pip install time
+pip install sys
+pip install threading
+
 import tkinter as tk
 from tkinter import simpledialog, messagebox
 from multiprocessing import Process, Manager
