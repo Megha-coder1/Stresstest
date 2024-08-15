@@ -13,24 +13,14 @@
 # You should have received a copy of the GNU General Public License
 # along with PhoneStress. If not, see <https://www.gnu.org/licenses/>.
 
-pip install tkinter
-pip install multiprocessing
-pip install random
-pip install numpy
-pip install logging
-pip install time
-pip install sys
-pip install threading
-
+import subprocess
+import sys
 import tkinter as tk
 from tkinter import simpledialog, messagebox
 from multiprocessing import Process, Manager
-import random
-import logging
 import numpy as np
+import logging
 import time
-import sys
-import threading
 
 # Config
 DEBUG = True
@@ -43,6 +33,23 @@ DEFAULT_WORKERS = 10
 DEFAULT_MEMORY_SIZE = 100  # MB
 
 PHONESTRESS_BANNER = 'PhoneStress v3.1 by K. MEGHADITYA'
+
+# List of required packages
+REQUIRED_PACKAGES = [
+    'numpy',
+    'tkinter'  # tkinter is included with standard Python installations, no need to install separately
+]
+
+def install_packages():
+    for package in REQUIRED_PACKAGES:
+        try:
+            __import__(package)
+        except ImportError:
+            print(f"Package '{package}' not found. Installing...")
+            subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+# Install required packages
+install_packages()
 
 # Configure logging
 logging.basicConfig(level=logging.DEBUG if DEBUG else logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -234,4 +241,3 @@ def start_stress_test():
 
 if __name__ == "__main__":
     show_welcome_window()
-  
